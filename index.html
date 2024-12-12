@@ -24,12 +24,12 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>PD Software Engineer</p>
+                <p>Software Engineer</p>
                 <h1>Hi, I'm <span>Simon</span> <br> From New York</h1>
             </div>
         </div>
     </div>
-    <!----------about------------>
+    <!----------About Me!------------>
     <div id="about">
         <div class="container">
             <div class="row">
@@ -38,7 +38,15 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am an undergraduate student studying at Northeastern University. My major is Computer Engineering and Computer Science. My graduation year is 2025.</p>
+                    <p>I am an undergraduate student at Northeastern University currently pursuing a bachelor's degree
+                        in computer engineering and computer science.
+                        I will be graduating in April 2025. My hometown is New York City, NY. Some of my hobbies include
+                        collecting, video game designing, and listening to music.
+                        Thoughout my time in university and my personal accomplishments, I have accumulated multiple
+                        years of experience in computer programming and a wide-ranging knowledge of various programming
+                        languages.
+                        I am eager to work in fields of software development and data analysis. Some of my personal
+                        strengths is I am focused, detail-oriented, and have a strong work ethic.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -46,23 +54,24 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span> <br>Building Android/iOS apps</li>
+                            <li><span>Autonomous Drone</span><br>Autonomous flight plan with sensor object detection</li>
+                            <li><span>Computer Vision</span><br>Artificial intelligence (AI) object detection</li>
+                            <li><span>Web Development</span><br>Web design with HTML/CSS</li>
+                            <li><span>Game Development</span> <br>Building pygame application</li>
+                            <li><span>Database Design</span> <br>Creating MySQL laundromat database</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
-                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
-                            <li><span>2016 - 2017</span> <br>Internship at ekart eCommerce.</li>
+                            <li><span>July, 2014 - December, 2024</span> <br>PD Software engineer internship at Fresenius Medical Care</li>
+                            <li><span>July, 2022 - August, 2022</span> <br>Assistant counselor at Brooklyn Chinese Association</li>
+                            <li><span>June, 2018 - September, 2021</span> <br>Part-time worker at Sunlight Laundromat</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
-                            <li><span>2016</span><br>MBA from ISM Bangalore.</li>
-                            <li><span>2014</span><br>BBA from ISM Bangalore.</li>
+                            <li><span>2021 - Current</span><br>Bachelor of Science in Computer Engineering, BSCmpE, at Northeastern University</li>
+                            <li><span>2017 - 2021</span><br>Diploma at New Explorations into Science Technology and Math (NEST+m)</li>
                         </ul>
                     </div>
                 </div>
@@ -82,7 +91,6 @@
                         Recusandae blanditiis quisquam aliquam, fugiat architecto debitis! Quidem neque in eos culpa
                         officiis ipsum,
                         tempore quod. Iste sed amet qui laboriosam ab!</p>
-                    <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fas fa-crop-alt"></i>
@@ -91,7 +99,6 @@
                         Recusandae blanditiis quisquam aliquam, fugiat architecto debitis! Quidem neque in eos culpa
                         officiis ipsum,
                         tempore quod. Iste sed amet qui laboriosam ab!</p>
-                    <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fab fa-app-store"></i>
@@ -100,7 +107,6 @@
                         Recusandae blanditiis quisquam aliquam, fugiat architecto debitis! Quidem neque in eos culpa
                         officiis ipsum,
                         tempore quod. Iste sed amet qui laboriosam ab!</p>
-                    <a href="#">Learn more</a>
                 </div>
 
             </div>
@@ -207,7 +213,7 @@
         function openmenu() {
             sidemenu.style.right = "0";
         }
-        function closemenu(){
+        function closemenu() {
             sidemenu.style.right = "-200px"
         }
     </script>
@@ -216,18 +222,18 @@
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 </body>
 
 </html>
