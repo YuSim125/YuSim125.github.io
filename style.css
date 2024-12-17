@@ -16,9 +16,14 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/background2.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(images/darkback2.png);
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    background-size: 100% px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: 0;
 }
 
 .container {
